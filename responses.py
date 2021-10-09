@@ -1,17 +1,17 @@
 import re
 import random
-
+from datetime import datetime
 
 def process_message(message, response_array, response):
     # Splits the message and the punctuation into an array
-    list_message = re.findall(r"[\s\w']+|[.,!?;]", message.lower())
+    list_message = re.findall(r"[\s\w'?]+|[.,!;]", message.lower())
 
     # Scores the amount of words in the message
     score = 0
     for word in list_message:
         if word in response_array:
             score = score + 1
-
+    message_original=message
     # Returns the response and the score of the response
     # print(score, response)
     return [score, response]
@@ -30,8 +30,9 @@ def get_response(message):
     Dani=["Me dio alergia solo de imaginarlo","Que lo haga el practicante", "Ya me dio alergia"]
     Line=["Como chinga oiga", "Aqui no vive", "Miauuu... a te la creiste", "Para que le hablas si eres alergico pinche Dani prro"]
     Mega=["Lo deje a un tiro", "Pinche daniel esta mas turbado que nunca"]
+    Caracolaa=["Si", "No", "Tal vez", "Siempre", "Probablemente", "Espera...", "No puedo contestar, me dio lag mental", "Si"]
     response_list = [
-        process_message(message, ['hello there'], 'General Kenobi!'),
+        
         process_message(message, ['reneee','Reneee'], random.choice(Rene)),
         process_message(message, ['danielll','Danielll'],random.choice(Daniel)),
         process_message(message, ['Daviddd','daviddd'], random.choice(David)),
@@ -40,7 +41,9 @@ def get_response(message):
         process_message(message, ['Aronnn', 'aronnn'], random.choice(Aaron)),
         process_message(message, ['Daniii', 'daniii'], random.choice(Dani)),
         process_message(message, ['Megaaa', 'megaaa'], random.choice(Mega)),
+        process_message(message, ['caracola', 'Caracola'], random.choice(Caracolaa)),
 
+        process_message(message, ['No man no man no man','no man no man no man'], 'Puuum... Leeroy Jenkins!!!! jajajaja no te creas man... ya llegue alguien me hablo?'),
         process_message(message, ['lag'], 'Alguien ha visto al Daniel?'),
         process_message(message, ['bocina'], 'La pinche bocina es mia y mis huevotes!'),
         process_message(message, ['Fortniteee', 'fortnite','juego?'], 'ya se murio el Daniel!'),
@@ -48,12 +51,21 @@ def get_response(message):
         process_message(message, ['no man', 'No man'], 'Alguien a visto al Danielll?'),
         process_message(message, ['oxxo', 'Oxxo'], 'Alguien a visto al Rene?'),
         process_message(message, ['cumpleañero', 'Cumpleañero'], 'Alguien se va a sentar a comer el pastel!'),
-        #process_message(message, ['hora?','Hora?', 'que horas son?','Que hora son?'], datetime.now().strftime('%H:%M:%S')),
-        #process_message(message, ['que dia es hoy?','Que dia es hoy?', 'a que estamos??','A que estamos?'], datetime.now().strftime('%d/%m/%Y')),
+        process_message(message, ['hora?','Hora?', 'que horas son?','Que hora son?'], datetime.now().strftime('%H:%M %p')),
+        process_message(message, ['que dia es hoy?','Que dia es hoy?', 'a que estamos?','A que estamos?'], datetime.now().strftime('%d/%m/%Y')),
+        process_message(message, ['cual saco?','Cual saco?','que saco?', 'Que saco?'], 'Esta!!'),
+        process_message(message, ['cual recibo?','Cual recibo?','que recibo?', 'Que recibo?'], 'Esta!!'),
+        process_message(message, ['chupo', 'Chupo'], 'Esta!!'),
+        process_message(message, ['saco', 'Saco', 'cual saco?', 'Cual saco?', 'Cuál saco?'], 'Esta!!'),
+
+        process_message(message, ['chinga tu madre', 'Chinga tu madre'], 'la tuya en vinagre!!'),
+        process_message(message, ['pinche bot', 'Pinche bot','pinche Bot', 'Pinche Bot'], 'La tuya pendeja!!'),
+        process_message(message, ['hello there', 'hellothere','Hello there', 'Hellothere'], 'General Kenobi!'),
+
         # Agregar mas actores
     ]
     
-    # Checks all of the response scores and returns the best matching response
+      # Checks all of the response scores and returns the best matching response
     response_scores = []
     for response in response_list:
         response_scores.append(response[0])
