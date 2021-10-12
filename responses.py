@@ -20,7 +20,7 @@ def process_message(message, response_array, response):
 def get_response(message):
     # Agregar las respuestas Array
     Daniel=["No man!","Quien es tu perra?", "Vete alv me gano la casa", "No le hago a eso", "yo no culeo gatods", "No me dormi man", "Zzzzz...."]
-    Rene=["Sho solo soy el practicante!","Quien quiere jugar cartitas?"]
+    Rene=["Espera estoy midiendo semillas...", "Apenas llevo 2300 semillas", "Vete por ellas!", "Sho solo soy el practicante!","Quien quiere jugar cartitas?"]
     Daniel=["Aaron me das un besito?","No man!","Quien es tu perra?", "Vete alv me gano la casa", "No le hago a eso", "yo no culeo gatos", "No me dormi", "Zzzzz...."]
     David=["Necesito un buen rifle","Necesito el grande, el chico no me llena (escudo)","Quiero ver gotas", "Ya me enbetune el pantalón"]
     Daniel=["este man","No man!","Quien es tu perra?", "Vete alv me gano la casa", "No le hago a eso", "yo no culeo gatos", "No me dormi", "Zzzzz...."]
@@ -30,6 +30,8 @@ def get_response(message):
     Dani=["Me dio alergia solo de imaginarlo","Que lo haga el practicante", "Ya me dio alergia"]
     Line=["Como chinga oiga", "Aqui no vive", "Miauuu... a te la creiste", "Para que le hablas si eres alergico pinche Dani prro"]
     Mega=["Lo deje a un tiro", "Pinche daniel esta mas turbado que nunca"]
+    risa=["De que te ries...!", "Si mucha risa!"]
+    Juego=["Esta!!", "Si mucha risa!"]
     Caracolaa=["Si", "No", "Tal vez", "Siempre", "Probablemente", "Espera...", "No puedo contestar, me dio lag mental", "Si"]
     response_list = [
         
@@ -43,10 +45,16 @@ def get_response(message):
         process_message(message, ['Megaaa', 'megaaa'], random.choice(Mega)),
         process_message(message, ['caracola', 'Caracola'], random.choice(Caracolaa)),
 
+
         process_message(message, ['No man no man no man','no man no man no man'], 'Puuum... Leeroy Jenkins!!!! jajajaja no te creas man... ya llegue alguien me hablo?'),
         process_message(message, ['lag'], 'Alguien ha visto al Daniel?'),
+        process_message(message, ['prestame', 'Prestame'], 'Esta!!!'),
+        process_message(message, ['https://www.facebook.com' + 'r"[\s]'], 'Jajajaja ya lo vi!!'),
+        process_message(message, ['puto bot', 'Puto bot'], 'Puto tu... quieres que publique tus fotos puteando?'),
+        process_message(message, ['jajaja', 'jajajaja','jajajajaja', 'jajajjajaja'], random.choice(risa)),
         process_message(message, ['bocina'], 'La pinche bocina es mia y mis huevotes!'),
-        process_message(message, ['Fortniteee', 'fortnite','juego?'], 'ya se murio el Daniel!'),
+        process_message(message, ['juego?', 'Juego?', 'Juego', 'juego'], random.choice(Juego)),
+        process_message(message, ['Fortniteee', 'fortnite'], 'para que si ya se murio el Daniel!'),
         process_message(message, ['Lineee', 'lineee', 'paquira'], random.choice(Line)),
         process_message(message, ['no man', 'No man'], 'Alguien a visto al Danielll?'),
         process_message(message, ['oxxo', 'Oxxo'], 'Alguien a visto al Rene?'),
@@ -57,9 +65,9 @@ def get_response(message):
         process_message(message, ['cual recibo?','Cual recibo?','que recibo?', 'Que recibo?'], 'Esta!!'),
         process_message(message, ['chupo', 'Chupo'], 'Esta!!'),
         process_message(message, ['saco', 'Saco', 'cual saco?', 'Cual saco?', 'Cuál saco?'], 'Esta!!'),
-
+        process_message(message, ['de ti puto boy', 'De ti puto boy'], 'Buscate otro payaso!!'),
         process_message(message, ['chinga tu madre', 'Chinga tu madre'], 'la tuya en vinagre!!'),
-        process_message(message, ['pinche bot', 'Pinche bot','pinche Bot', 'Pinche Bot'], 'La tuya pendeja!!'),
+        process_message(message, ['pinche bot', 'Pinche bot','pinche Bot', 'Pinche Bot', 'Pinchi Bot', 'Pinchi Bot'], 'La tuya pendeja!!'),
         process_message(message, ['hello there', 'hellothere','Hello there', 'Hellothere'], 'General Kenobi!'),
 
         # Agregar mas actores
