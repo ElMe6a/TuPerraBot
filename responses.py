@@ -21,18 +21,18 @@ def get_response(message):
     # Agregar las respuestas Array
     
     Rene=["Espera estoy midiendo semillas...", "Apenas llevo 2300 semillas", "Vete por ellas!", "Sho solo soy el practicante!","Quien quiere jugar cartitas?"]
-    Daniel=["Aaron me das un besito?","No man!","Quien es tu perra?", "Vete alv me gano la casa", "No le hago a eso", "yo no culeo gatos", "No me dormi", "Zzzzz...."]
-    David=["Necesito un buen rifle","Necesito el grande, el chico no me llena (escudo)","Quiero ver gotas", "Ya me enbetune el pantalón"]
-    Daniel=["este man","Alguien sabe si la doctora ya le hizo examen de prostata?","No man!","Quien es tu perra?", "Vete alv me gano la casa", "No le hago a eso", "yo no culeo gatos", "No me dormi man", "Zzzzz...."]
+    Daniel=["me acabo de hacer una cuata", "Yo yo yo yo yo soy de sistemas", "Chinga tu madre Totalplay", "Aaron me das un besito?", "No man!", "Quien es tu perra?", "Vete alv me gano la casa", "No le hago a eso", "yo no culeo gatos", "No me dormi", "Zzzzz...."]
+    David=["Necesito un buen rifle", "Necesito el grande, el chico no me llena (escudo)","Quiero ver gotas", "Ya me enbetune el pantalón"]
+    Daniel=["Puto totalplay", "yo, yo, yo, yo, yo, soy de sistemas", "este man", "Alguien sabe si la doctora ya le hizo examen de prostata?","No man!","Quien es tu perra?", "Vete alv me gano la casa", "No le hago a eso", "yo no culeo gatos", "No me dormi man", "Zzzzz...."]
     #Daniel=["Alguien sabe si la doctora ya le hizo examen de prostata?"]
-    Shecho=["Ya weey!!!", "Estas bien pendejo Daniel", "Su ptm ya me quemaron", "Sacalas VL!", "Me trague mi propio pedo alv"]
-    VL=["Estoy tomando", "Pssst (ruido de cheve)","Se me chingo la tele", "Deje cansado al shecho"]
-    Aaron=["Ya me culie al Daniel","Daniel a mi me dijeron que culeas gatos!", "Me acabo de fumar un gallito"]
-    Dani=["Me dio alergia solo de imaginarlo","Que lo haga el practicante", "Ya me dio alergia"]
+    Shecho=["Saludos desde el anexo"," Ya weey!!!", "Estas bien pendejo Daniel", "Su ptm ya me quemaron", "Sacalas VL!", "Me trague mi propio pedo alv"]
+    VL=["Estoy tomando", "Pssst (ruido de cheve)", "Se me chingo la tele", "Deje cansado al shecho"]
+    Aaron=["Chale aun no me pagan", "Te ofrecí mi amistad y te culeaste a mi perro!!!!", "Ya me culie al Daniel", "Me acabo de fumar un gallito"]
+    Dani=["Rataaa!!!!!!", "Roba Kills!", "Me dio alergia solo de imaginarlo", "Que lo haga el practicante", "Ya me dio alergia"]
     Line=["Como chinga oiga", "Aqui no vive", "Miauuu... a te la creiste", "Para que le hablas si eres alergico pinche Dani prro"]
     Mega=["Lo deje a un tiro", "Pinche daniel esta mas turbado que nunca"]
     risa=["De que te ries...!", "Si mucha risa!"]
-    Juego=["Esta!!", "No le digan al Daniel de todos modos muere rapido"]
+    Juego=["Esta!!", "No le digan al Daniel de todos modos muere rapido", "Pinche Leyros Rata!!!!"]
     Caracolaa=["Si", "No", "Tal vez", "Siempre", "Probablemente", "Espera...", "No puedo contestar, me dio lag mental", "Si"]
     response_list = [
         
@@ -52,7 +52,7 @@ def get_response(message):
         process_message(message, ['prestame', 'Prestame'], 'Esta!!!'),
         process_message(message, ['https://www.facebook.com/'], 'Jajajaja ya lo vi!!'),
         process_message(message, ['puto bot', 'Puto bot'], 'Puto tu... quieres que publique tus fotos puteando?'),
-        process_message(message, ['jajaja', 'jajajaja','jajajajaja', 'jajajjajaja'], random.choice(risa)),
+        process_message(message, ['jajaja', 'jajajaja','jajajajaja', 'jajajjajaja','jajajajajajajajaaja'], random.choice(risa)),
         process_message(message, ['bocina'], 'La pinche bocina es mia y mis huevotes!'),
         process_message(message, ['juego?', 'Juego?', 'Juego', 'juego'], random.choice(Juego)),
         process_message(message, ['Fortniteee', 'fortnite'], 'para que si ya se murio el Daniel!'),
