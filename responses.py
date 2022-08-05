@@ -20,7 +20,7 @@ def process_message(message, response_array, response):
 def get_response(message):
     # Agregar las respuestas Array
     
-    Rene=["Espera estoy midiendo semillas...", "Apenas llevo 2300 semillas", "Vete por ellas!", "Sho solo soy el practicante!","Quien quiere jugar cartitas?"]
+    Rene=["Ando volando un Dron","Espera estoy midiendo semillas...", "Apenas llevo 2300 semillas", "Vete por ellas!", "Sho solo soy el practicante!","Quien quiere jugar cartitas?"]
     Daniel=["me acabo de hacer una cuata", "Yo yo yo yo yo soy de sistemas", "Chinga tu madre Totalplay", "Aaron me das un besito?", "No man!", "Quien es tu perra?", "Vete alv me gano la casa", "No le hago a eso", "yo no culeo gatos", "No me dormi", "Zzzzz...."]
     David=["Necesito un buen rifle", "Necesito el grande, el chico no me llena (escudo)","Quiero ver gotas", "Ya me enbetune el pantalón"]
     Daniel=["Puto totalplay", "yo, yo, yo, yo, yo, soy de sistemas", "este man", "Alguien sabe si la doctora ya le hizo examen de prostata?","No man!","Quien es tu perra?", "Vete alv me gano la casa", "No le hago a eso", "yo no culeo gatos", "No me dormi man", "Zzzzz...."]
@@ -34,6 +34,7 @@ def get_response(message):
     risa=["De que te ries...!", "Si mucha risa!"]
     Juego=["Esta!!", "No le digan al Daniel de todos modos muere rapido", "Pinche Leyros Rata!!!!"]
     Caracolaa=["Si", "No", "Tal vez", "Siempre", "Probablemente", "Espera...", "No puedo contestar, me dio lag mental", "Si"]
+    Michi=["no lo compres michi!!", "Compralo!!!!!!!!!!", "Aron chinga tu madre!!", "Obligame perro!"]
     response_list = [
         
         process_message(message, ['reneee','Reneee'], random.choice(Rene)),
@@ -45,7 +46,7 @@ def get_response(message):
         process_message(message, ['Daniii', 'daniii'], random.choice(Dani)),
         process_message(message, ['Megaaa', 'megaaa'], random.choice(Mega)),
         process_message(message, ['caracola', 'Caracola'], random.choice(Caracolaa)),
-
+        process_message(message, ['Michiii', 'michiii'], random.choice(Michi)),
 
         process_message(message, ['No man no man no man','no man no man no man'], 'Puuum... Leeroy Jenkins!!!! jajajaja no te creas man... ya llegue alguien me hablo?'),
         process_message(message, ['lag'], 'Alguien ha visto al Daniel?'),
