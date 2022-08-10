@@ -34,7 +34,7 @@ def get_response(message):
     risa=["De que te ries...!", "Si mucha risa!"]
     Juego=["Esta!!", "No le digan al Daniel de todos modos muere rapido", "Pinche Leyros Rata!!!!"]
     Caracolaa=["Si", "No", "Tal vez", "Siempre", "Probablemente", "Espera...", "No puedo contestar, me dio lag mental", "Si"]
-    Michi=["no lo compres michi!!", "Compralo!!!!!!!!!!", "Aron chinga tu madre!!", "Obligame perro!"]
+    Michi=["no lo compres michi!!","Alguien ha visto a mi gato?", "Compralo!!!!!!!!!!", "Aron chinga tu madre!!", "Obligame perro!"]
     response_list = [
         
         process_message(message, ['reneee','Reneee'], random.choice(Rene)),
